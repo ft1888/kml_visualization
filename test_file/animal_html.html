@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轨迹整理</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .topdiv {
+            height: 680px;
+        }
+
+        .enddiv {
+            height: 50px;
+            /* background-color: aqua; */
+
+        }
+
+        .feedback {
+            float: left;
+            height: 250px;
+            width: 400px;
+            /* background-color: blue; */
+            margin-left: 15px;
+            margin-top: 5px;
+        }
+
+        .feedback p {
+            display: block;
+            border-width: 2px;
+            border-style: solid;
+            border-color: rgb(0, 0, 0);
+            height: 230px;
+            width: 400px;
+            margin-top: 5px;
+
+        }
+
+        .enddiv button {
+            float: left;
+            font-size: 18px;
+            width: 160px;
+            height: 35px;
+        }
+
+        #record {
+            margin-left: 10px;
+        }
+
+        #csv {
+            margin-left: 110px;
+        }
+
+        #pre {
+            margin-left: 40px;
+        }
+
+        #next {
+            margin-left: 240px;
+        }
+
+        .topdiv .info {
+            width: 450px;
+            height: 660px;
+            float: left;
+            /* background-color: aquamarine; */
+            margin-top: 10px;
+            padding-left: 10px;
+        }
+
+        .topdiv .pic {
+            width: 550px;
+            height: 610px;
+            float: left;
+            /* background-color: blue; */
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+
+        #uploadfile {
+            width: 200px;
+            height: 40px;
+            /* margin-left: 10px; */
+            font-size: 18px;
+        }
+
+        #myBtn {
+            width: 200px;
+            height: 40px;
+            /* margin-left: 10px; */
+            font-size: 18px;
+        }
+
+        #visitor_id {
+            margin-top: 10px;
+        }
+
+        #activity {
+            margin-top: 10px;
+        }
+
+        #place {
+            /* margin-top: 10px; */
+            width: 340px;
+            height: 30px;
+        }
+
+        .picinfo_now {
+            width: 550px;
+            height: 200px;
+            /* background-color: beige; */
+            margin-top: 10px;
+        }
+
+        .picinfo_now span {
+            margin-top: 10px;
+        }
+
+        .picinfo_now p {
+            display: block;
+            border-width: 2px;
+            border-style: solid;
+            border-color: rgb(0, 0, 0);
+            height: 200px;
+            width: 430px;
+            margin-top: 5px;
+
+        }
+
+        .se_time {
+            width: 550px;
+            height: 260px;
+            /* background-color: beige; */
+            margin-top: 10px;
+        }
+
+        #start_time {
+            width: 100px;
+            height: 30px;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .se_time p {
+            display: block;
+            border-width: 2px;
+            border-style: solid;
+            border-color: rgb(0, 0, 0);
+            height: 80px;
+            width: 430px;
+            margin-top: 5px;
+        }
+
+        #end_time {
+            width: 100px;
+            height: 30px;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 上部大盒子 -->
+    <div class="topdiv">
+        <!-- 上部大盒子——左侧信息操作部分 -->
+        <div class="info">
+            <input type="file" id="uploadfile" name="pic" />
+            <button id="myBtn">加载文件</button>
+            <p id="visitor_id">游客编号:</p>
+            <form action="" id="activity">
+                活动类型：<input type="radio" name="activity" id="ac1" style="margin-left: 20px;" value="入园"> <label
+                    for="ac1">
+                    入园</label>
+                <input type="radio" name="activity" id="ac2" style="margin-left: 20px;" value="参观"> <label
+                    for="ac2">参观</label>
+                <input type="radio" name="activity" id="ac3" style="margin-left: 20px;" value="游乐"> <label
+                    for="ac3">游乐</label>
+                <input type="radio" name="activity" id="ac4" style="margin-left: 20px;" value="休息"> <label
+                    for="ac4">休息</label><br>
+                <input type="radio" name="activity" id="ac5" style="margin-left: 100px;" value="就餐"> <label
+                    for="ac5">就餐</label>
+                <input type="radio" name="activity" id="ac6" style="margin-left: 20px;" value="上车"> <label
+                    for="ac6">上车</label>
+                <input type="radio" name="activity" id="ac7" style="margin-left: 20px;" value="下车"> <label
+                    for="ac7">下车</label>
+                <input type="radio" name="activity" id="ac8" style="margin-left: 20px;" value="商店购物"> <label
+                    for="ac8">商店购物</label><br>
+                <input type="radio" name="activity" id="ac9" style="margin-left: 100px;" value="寻路"> <label
+                    for="ac9">寻路</label>
+                <input type="radio" name="activity" id="ac10" style="margin-left: 20px;" value="如厕"> <label
+                    for="ac10">如厕</label>
+                <input type="radio" name="activity" id="ac11" style="margin-left: 20px;" value="离园"> <label
+                    for="ac11">离园</label>
+                <input type="radio" name="activity" id="ac12" style="margin-left: 20px;" value="其他服务"> <label
+                    for="ac12">其他服务</label>
+            </form>
+            <form action="">
+                活动地点：<input type="text" id="place">
+            </form>
+            <div class="picinfo_now">
+                <span>当前图片信息</span>
+                <p id="picinfo">这里显示当前图片信息</p>
+            </div>
+            <div class="se_time">
+                <button type="button" id="start_time" onclick="starttime()">开始时间</button>
+                <p id="stime"></p>
+                <button type="button" id="end_time" onclick="endtime()">结束时间</button>
+                <p id="etime"></p>
+            </div>
+
+
+        </div>
+        <!--上部大盒子——右侧图像显示部分  -->
+        <div class="pic">
+            <p id="picname"></p>
+            <img id="image" src=" " alt="" width="560px" height="640px">
+
+        </div>
+        <div class="feedback">
+            信息反馈
+            <p id="info_feedback"></p>
+
+        </div>
+
+    </div>
+    <!-- 下部大盒子——操作按钮 -->
+    <div class="enddiv">
+        <button type="button" id="record" onclick="record_activity()">记录活动</button>
+        <button type="button" id="csv" onclick="csv_export()">导出csv文件</button>
+        <button type="button" id="pre" onclick="pre()">上一张</button>
+        <button type="button" id="next" onclick="next()">下一张</button>
+    </div>
+    <pre id="file"></pre>
+
+
+</body>
+<script>
+    UTC_Converter = function (utc) {
+        var date2 = new Date(utc);
+        return date2.toLocaleString();
+    } //UTC时间转换函数
+
+    an_or_mac = function (str) {
+        let judge = [];
+        for (var line = 0; line < str.length; line++) {
+            if (str[line].includes("snippet")) {
+                judge.push("snippet")
+            }
+        }
+        return judge
+    } //判断安卓文件还是苹果文件
+
+    file_index = 0;
+    src = [];
+    lng = [];
+    lat = [];
+    alt = [];
+    time = [];
+    info = []; //总的汇总信息
+    temp = []; //每一条缓存信息
+    picname = []; //不叫name叫picname了
+    activity = ''; //活动信息    
+    visitorid = ''; //游客编号
+    record_index = 1;
+    start_index = 1;
+    end_index = 1;
+    detect = []; //检查安卓还是苹果文件
+    start = ''; //记录开始时间信息
+    end = ''; //记录结束时间信息
+    txt = ''; //储存kml文件信息
+    location_t = [];
+    label = [];
+    i = 0;
+    place = ''; //文本框活动地点
+
+    document.getElementById("myBtn").addEventListener("click", function () {
+
+        reader = new FileReader();
+
+        reader.addEventListener('load', function () {
+            // document.getElementById('file').innerText = this.result;
+            txt = this.result;
+
+            var fileContentArray = txt.split(/\r\n|\n/);
+            detect = an_or_mac(fileContentArray);
+            if (detect.length != 0) {
+
+                var parser = new DOMParser();
+                var xmlDoc = parser.parseFromString(txt, "text/xml");
+                var tag = xmlDoc.getElementsByTagName("name");
+                for (var i = 0; i < tag.length; i++) {
+                    picname.push(tag[i].textContent);
+                };
+                picname = picname.slice(4, picname.length - 2)
+
+                for (var i = 0; i < picname.length; i++) {
+                    if (picname[i] == "") {
+                        picname[i] = "该图片无名称"
+                    }
+                }; //安卓版名称获取
+                // console.log(picname);
+
+                var location = xmlDoc.getElementsByTagName("coordinates");
+                for (var i = 0; i < location.length; i++) {
+                    location_t.push(location[i].textContent);
+                };
+                location_t = location_t.slice(2)
+                for (var i = 0; i < location_t.length; i++) {
+                    lng.push(location_t[i].split(",")[0]);
+                    lat.push(location_t[i].split(",")[1]);
+                    alt.push(location_t[i].split(",")[2]);
+                }; //安卓版 经纬度海拔信息获取
+
+                for (var line = 0; line < fileContentArray.length; line++) {
+                    if (fileContentArray[line].includes('src')) {
+                        src.push(fileContentArray[line].split('src')[1].split('"')[1])
+                    } //安卓链接
+                    if (fileContentArray[line].includes('"Time"')) {
+                        time.push(UTC_Converter(Number(fileContentArray[line + 1].split(">")[1].split(
+                            "<")[0])))
+                    } //安卓时间
+                    // if (fileContentArray[line].includes('<name>')) {
+                    //     picname.push(fileContentArray[line].split(">")[1].split("<")[0])
+                    // } //安卓名称
+                }
+                // console.log(src);
+                // console.log(time);     
+                //安卓版链接信息+时间信息获取
+
+            } else {
+                for (var line = 0; line < fileContentArray.length; line++) {
+                    if (fileContentArray[line].includes('src')) {
+                        src.push(fileContentArray[line].split('src')[1].split('"')[1]) //苹果链接
+                        if (fileContentArray[line - 1].includes('name')) {
+                            picname.push(fileContentArray[line - 1].split("CDATA")[1].split("]")[0]
+                                .split("[")[1])
+                        } else {
+                            picname.push('该图片无名称') //苹果版的名称获取
+                        }
+                    } //苹果链接+名称
+                    if (fileContentArray[line].includes('"Time"')) {
+                        time.push(UTC_Converter(Number(fileContentArray[line + 1].split(">")[1].split(
+                            "<")[0])))
+                    } //苹果时间
+                    if (fileContentArray[line].includes('"Longtitude"')) {
+                        lng.push(fileContentArray[line + 1].split(">")[1].split("<")[0])
+                    } //苹果经度
+                    if (fileContentArray[line].includes('"Latitude"')) {
+                        lat.push(fileContentArray[line + 1].split(">")[1].split("<")[0])
+                    } //苹果纬度
+                    if (fileContentArray[line].includes('"Altitude"')) {
+                        alt.push(fileContentArray[line + 1].split(">")[1].split("<")[0])
+                    } //苹果海拔
+                }
+
+
+            }
+
+            document.getElementById("image").src = src[file_index];
+            document.getElementById('picinfo').innerHTML = '时间：' + time[file_index] + '<br>' + '经度：' +
+                lng[file_index] + '<br>' + '纬度：' + lat[file_index] + '<br>' + '海拔：' + alt[file_index];
+
+            document.getElementById('picname').innerHTML = '照片名称：' + picname[file_index]
+            info[0] = ['游客编号', '活动编号', '活动类型', '活动地点', '开始时间', '结束时间', '经度', '纬度', '海拔']
+
+        });
+        reader.readAsText(document.querySelector('input').files[0]);
+
+        visitorid = document.getElementById('uploadfile').files[0].name.split(".")[0];
+        document.getElementById('visitor_id').innerHTML = '游客编号：' + visitorid; //显示游客编号
+
+    });
+
+    function next() { //下一张事件
+        file_index++;
+        if (file_index >= src.length) {
+            file_index = src.length - 1;
+        }
+        document.getElementById("image").src = src[file_index];
+        document.getElementById('picinfo').innerHTML = '时间：' + time[file_index] + '<br>' + '经度：' +
+            lng[file_index] + '<br>' + '纬度：' + lat[file_index] + '<br>' + '海拔：' + alt[file_index];
+
+        document.getElementById('picname').innerHTML = '照片名称：' + picname[file_index];
+        document.getElementById('info_feedback').innerHTML = ''
+    }
+
+    function pre() { //上一张事件
+        file_index--;
+        if (file_index < 0) {
+            file_index = 0;
+        }
+
+        document.getElementById("image").src = src[file_index];
+        document.getElementById('picinfo').innerHTML = '时间：' + time[file_index] + '<br>' + '经度：' +
+            lng[file_index] + '<br>' + '纬度：' + lat[file_index] + '<br>' + '海拔：' + alt[file_index];
+
+        document.getElementById('picname').innerHTML = '照片名称：' + picname[file_index];
+        document.getElementById('info_feedback').innerHTML = ''
+    }
+
+    function starttime() {
+        start_index = file_index;
+        var obj = document.getElementsByName("activity")
+        for (var i = 0; i < obj.length; i++) { //遍历Radio 
+            if (obj[i].checked) {
+                activity = obj[i].value;
+            }
+        }
+        place = document.getElementById("place").value;
+        document.getElementById('stime').innerHTML = '开始时间：' + time[start_index] + '<br>' + '活动类型：' + activity +
+            '<br>' + '活动地点：' + place;
+
+        start = time[start_index]
+    }
+
+    function endtime() {
+        end_index = file_index;
+        document.getElementById('etime').innerHTML = '结束时间：' + time[end_index]
+
+        end = time[end_index]
+    }
+
+    function record_activity() {
+        console.log(Boolean(activity));
+        console.log(Boolean(place));
+        console.log(Boolean(start));
+
+        if ((Boolean(activity) == true) && (Boolean(place) == true) && (Boolean(start) == true)) {
+            temp[0] = visitorid;
+            temp[1] = record_index;
+            temp[2] = activity;
+            temp[3] = place;
+            temp[4] = start;
+            temp[5] = end;
+            temp[6] = lng[start_index];
+            temp[7] = lat[start_index];
+            temp[8] = alt[start_index];
+            info[record_index] = temp;
+            document.getElementById('info_feedback').innerHTML = '该条活动记录成功！活动信息如下：' + '<br>' + '活动类型：' + activity +
+                '<br>' + '活动地点：' + place + '<br>' + '开始时间：' + start + '<br>' + '结束时间：' + end + '<br>' + '经度：' + lng[
+                    start_index] + '<br>' +
+                '纬度：' + lat[start_index] + '<br>' + '海拔：' + alt[start_index];
+            record_index++;
+            document.getElementById('place').value = '';
+
+            var obj = document.getElementsByName("activity")
+            for (var i = 0; i < obj.length; i++) { //遍历Radio 
+                if (obj[i].checked) {
+                    obj[i].checked == false;
+                }
+            } //恢复单选按钮未选中的状态
+            document.getElementById('stime').innerHTML = '';
+            document.getElementById('etime').innerHTML = '';
+            activity = '';
+            start = '';
+            end = ''
+            temp = [];
+        } else if (Boolean(activity) == true && Boolean(place) == true && Boolean(start) == false) {
+            temp[0] = visitorid;
+            temp[1] = record_index;
+            temp[2] = activity;
+            temp[3] = place;
+            temp[4] = start;
+            temp[5] = end;
+            temp[6] = '';
+            temp[7] = '';
+            temp[8] = '';
+            info[record_index] = temp;
+            document.getElementById('info_feedback').innerHTML = '该条活动记录成功！活动信息如下：' + '<br>' + '活动类型：' + activity +
+                '<br>' + '活动地点：' + place + '<br>' + '开始时间：' + start + '<br>' + '结束时间：' + end + '<br>' + '经度：' + '<br>' +
+                '纬度：' + '<br>' + '海拔：';
+            record_index++;
+            document.getElementById('place').value = '';
+
+            var obj = document.getElementsByName("activity")
+            for (var i = 0; i < obj.length; i++) { //遍历Radio 
+                if (obj[i].checked) {
+                    obj[i].checked == false;
+                }
+            } //恢复单选按钮未选中的状态
+            document.getElementById('stime').innerHTML = '';
+            document.getElementById('etime').innerHTML = '';
+            activity = '';
+            start = '';
+            end = '';
+            temp = []
+        } else {
+            document.getElementById('info_feedback').innerHTML = '该条活动信息尚未完善，请检查'
+        }
+    }
+
+    function csv_export() {
+        // const rows = [
+        //     ["name1", "city1", "some other info"],
+        //     ["name2", "city2", "more info"]
+        // ];
+
+        var pom = document.createElement('a');
+        var csvContent = info.map(e => e.join(",")).join("\n"); //here we load our csv data 
+        var blob = new Blob(["\ufeff" + csvContent], {
+            type: 'text/csv;charset=utf-8;'
+        });
+        var url = URL.createObjectURL(blob);
+        pom.href = url;
+        pom.setAttribute('download', '下载.csv');
+        pom.click();
+    }
+
+
+    // document.getElementById('image').src = "https://down-files.2bulu.com/f/dn1?downParams=%2BY4%2BXtddA6NyhpTOGrK8gXeKi46ESKhL";
+</script>
+
+</html>

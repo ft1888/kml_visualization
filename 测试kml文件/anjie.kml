@@ -1,0 +1,532 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+  <Document id="TbuluKmlVersion2">
+    <name>2022-03-10 14:48上海杨浦区</name>
+    <description><![CDATA[]]>
+    </description>
+    <snippet><![CDATA[通过“两步路”生成，http://www.2bulu.com]]>
+    </snippet>
+    <author>种花家的甲壳虫</author>
+    <ExtendedData>
+      <Data name="TrackId">
+        <value>30405215</value>
+      </Data>
+      <Data name="TrackTypeId">
+        <value>8</value>
+      </Data>
+      <Data name="TrackTags">
+        <value>爬山</value>
+      </Data>
+      <Data name="BeginTime">
+        <value>1646894892000</value>
+      </Data>
+      <Data name="EndTime">
+        <value>1646895314000</value>
+      </Data>
+      <Data name="TimeUsed">
+        <value>422000</value>
+      </Data>
+      <Data name="PauseTime">
+        <value>7265</value>
+      </Data>
+      <Data name="PosStartName">
+        <value>同济大学彰武路校区学生公寓-6号楼</value>
+      </Data>
+      <Data name="PosEndName">
+        <value>同济大学彰武路校区学生公寓-1号楼</value>
+      </Data>
+      <Data name="ProductVersion">
+        <value>and_7.1.9</value>
+      </Data>
+      <Data name="StartDistrictId">
+        <value>4994</value>
+      </Data>
+      <Data name="EndDistrictId">
+        <value>4994</value>
+      </Data>
+      <Data name="CreaterId">
+        <value>30287309</value>
+      </Data>
+      <Data name="CreaterName">
+        <value>种花家的甲壳虫</value>
+      </Data>
+      <Data name="CreaterIcon">
+        <value>370236022</value>
+      </Data>
+      <Data name="Privacy">
+        <value>0</value>
+      </Data>
+    </ExtendedData>
+    <Style id="TrackStyle_n">
+      <LineStyle>
+        <color>ff1034e8</color>
+        <width>5</width>
+      </LineStyle>
+      <IconStyle>
+        <Icon><![CDATA[http://files.2bulu.com/f/d1?downParams=BYohR0x5OLAr0OBxohfNOA%3D%3D%0A]]>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="TrackStyle_h">
+      <LineStyle>
+        <color>ff1034e8</color>
+        <width>7</width>
+        <scale>1.1</scale>
+      </LineStyle>
+      <IconStyle>
+        <Icon><![CDATA[http://files.2bulu.com/f/d1?downParams=BYohR0x5OLAr0OBxohfNOA%3D%3D%0A]]>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <StyleMap id="TrackStyle">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#TrackStyle_n</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#TrackStyle_h</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="LineStringStyle">
+      <LineStyle>
+        <color>ff1034e8</color>
+        <width>6</width>
+      </LineStyle>
+    </Style>
+    <Style id="startPointStyle">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon><![CDATA[http://files.2bulu.com/f/d1?downParams=n%2BVE0NaFmzwndk%2BZ75NU9A%3D%3D%0A]]>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="endPointStyle">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon><![CDATA[http://files.2bulu.com/f/d1?downParams=0Q3GJ5o%2FHpsr0OBxohfNOA%3D%3D%0A]]>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="MarkerStylePicture">
+      <LabelStyle>
+        <color>ff00ffff</color>
+        <colorMode>normal</colorMode>
+      </LabelStyle>
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon><![CDATA[http://files.2bulu.com/f/d1?downParams=vMzvc3dTBl0r0OBxohfNOA%3D%3D%0A]]>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="MarkerStyleSound">
+      <LabelStyle>
+        <color>ff00ffff</color>
+        <colorMode>normal</colorMode>
+      </LabelStyle>
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon><![CDATA[http://files.2bulu.com/f/d1?downParams=poL0RfxWHTIr0OBxohfNOA%3D%3D%0A]]>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="MarkerStyleVideo">
+      <LabelStyle>
+        <color>ff00ffff</color>
+        <colorMode>normal</colorMode>
+      </LabelStyle>
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon><![CDATA[http://files.2bulu.com/f/d1?downParams=vMzvc3dTBl0r0OBxohfNOA%3D%3D%0A]]>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="MarkerStyleText">
+      <LabelStyle>
+        <color>ff00ffff</color>
+        <colorMode>normal</colorMode>
+      </LabelStyle>
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon><![CDATA[http://files.2bulu.com/f/d1?downParams=s2An6%2B3%2BIWUr0OBxohfNOA%3D%3D%0A]]>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder id="TbuluHisPointFolder">
+      <name>标注点</name>
+      <Placemark id="startPoint">
+        <name>起点</name>
+        <styleUrl>#startPointStyle</styleUrl>
+        <TimeStamp>
+          <when>2022-03-10T06:48:13Z</when>
+        </TimeStamp>
+        <Point>
+          <coordinates>121.50910694509699,31.2836176779093,91.21097</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="endPoint">
+        <name>终点</name>
+        <styleUrl>#endPointStyle</styleUrl>
+        <TimeStamp>
+          <when>2022-03-10T06:55:05Z</when>
+        </TimeStamp>
+        <Point>
+          <coordinates>121.50899800994729,31.28415121147633,20.88236</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="realPoint">
+        <name>1号楼</name>
+        <styleUrl>#MarkerStylePicture</styleUrl>
+        <description>
+          <div>
+            <a href="" target="_blank">
+              <img style="height:360" src="https://down-files.2bulu.com/f/dn1?downParams=nuWDSv4UYB2hZeED%2B8A3FrnYnQnX2YXM" />
+            </a>
+          </div>
+        </description>
+        <TimeStamp>
+          <when>2022-03-10T06:48:25Z</when>
+        </TimeStamp>
+        <Point>
+          <coordinates>121.50919067683225,31.283705489426076,72.134125</coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="PosType">
+            <value>0</value>
+          </Data>
+          <Data name="Speed">
+            <value>0.28613117</value>
+          </Data>
+          <Data name="Accuracy">
+            <value>4.9</value>
+          </Data>
+          <Data name="Time">
+            <value>1646894905000</value>
+          </Data>
+          <Data name="description">
+            <value></value>
+          </Data>
+          <Data name="FileId">
+            <value>1005256190</value>
+          </Data>
+          <Data name="FileSize">
+            <value>5805926</value>
+          </Data>
+          <Data name="FileType">
+            <value>0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark id="realPoint">
+        <name></name>
+        <styleUrl>#MarkerStylePicture</styleUrl>
+        <description>
+          <div>
+            <a href="" target="_blank">
+              <img style="height:360" src="https://down-files.2bulu.com/f/dn1?downParams=nuWDSv4UYB0%2FDlssNcgl3d30FZ3g7bEg" />
+            </a>
+          </div>
+        </description>
+        <TimeStamp>
+          <when>2022-03-10T06:50:17Z</when>
+        </TimeStamp>
+        <Point>
+          <coordinates>121.50867388665867,31.28354932858854,27.907866</coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="PosType">
+            <value>0</value>
+          </Data>
+          <Data name="Speed">
+            <value>0.5737545</value>
+          </Data>
+          <Data name="Accuracy">
+            <value>4.7</value>
+          </Data>
+          <Data name="Time">
+            <value>1646895017000</value>
+          </Data>
+          <Data name="description">
+            <value></value>
+          </Data>
+          <Data name="FileId">
+            <value>1005256189</value>
+          </Data>
+          <Data name="FileSize">
+            <value>7365348</value>
+          </Data>
+          <Data name="FileType">
+            <value>0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark id="realPoint">
+        <name>大门口</name>
+        <styleUrl>#MarkerStylePicture</styleUrl>
+        <description>
+          <div>
+            <a href="" target="_blank">
+              <img style="height:360" src="https://down-files.2bulu.com/f/dn1?downParams=%2BY4%2BXtddA6NyhpTOGrK8gXeKi46ESKhL" />
+            </a>
+          </div>
+        </description>
+        <TimeStamp>
+          <when>2022-03-10T06:51:43Z</when>
+        </TimeStamp>
+        <Point>
+          <coordinates>121.50793575881417,31.284049848052806,23.91123</coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="PosType">
+            <value>0</value>
+          </Data>
+          <Data name="Speed">
+            <value>0.57253987</value>
+          </Data>
+          <Data name="Accuracy">
+            <value>4.7</value>
+          </Data>
+          <Data name="Time">
+            <value>1646895103000</value>
+          </Data>
+          <Data name="description">
+            <value></value>
+          </Data>
+          <Data name="FileId">
+            <value>1005253647</value>
+          </Data>
+          <Data name="FileSize">
+            <value>6387156</value>
+          </Data>
+          <Data name="FileType">
+            <value>0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark id="realPoint">
+        <name></name>
+        <styleUrl>#MarkerStylePicture</styleUrl>
+        <description>
+          <div>
+            <a href="" target="_blank">
+              <img style="height:360" src="https://down-files.2bulu.com/f/dn1?downParams=%2BY4%2BXtddA6MDpqN5jBxlYbhm%2BKadJkk0" />
+            </a>
+          </div>
+        </description>
+        <TimeStamp>
+          <when>2022-03-10T06:53:11Z</when>
+        </TimeStamp>
+        <Point>
+          <coordinates>121.50849040330765,31.284408194749847,14.48505</coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="PosType">
+            <value>0</value>
+          </Data>
+          <Data name="Speed">
+            <value>0.19951087</value>
+          </Data>
+          <Data name="Accuracy">
+            <value>4.7</value>
+          </Data>
+          <Data name="Time">
+            <value>1646895191000</value>
+          </Data>
+          <Data name="description">
+            <value></value>
+          </Data>
+          <Data name="FileId">
+            <value>1005253645</value>
+          </Data>
+          <Data name="FileSize">
+            <value>5916243</value>
+          </Data>
+          <Data name="FileType">
+            <value>0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark id="realPoint">
+        <name></name>
+        <styleUrl>#MarkerStylePicture</styleUrl>
+        <description>
+          <div>
+            <a href="" target="_blank">
+              <img style="height:360" src="https://down-files.2bulu.com/f/dn1?downParams=%2BY4%2BXtddA6OzeLJ8V9Qq30jTnDOSULPa" />
+            </a>
+          </div>
+        </description>
+        <TimeStamp>
+          <when>2022-03-10T06:54:27Z</when>
+        </TimeStamp>
+        <Point>
+          <coordinates>121.50924085715017,31.28427116432083,21.866808</coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="PosType">
+            <value>0</value>
+          </Data>
+          <Data name="Speed">
+            <value>0.293032</value>
+          </Data>
+          <Data name="Accuracy">
+            <value>4.1767526</value>
+          </Data>
+          <Data name="Time">
+            <value>1646895267000</value>
+          </Data>
+          <Data name="description">
+            <value></value>
+          </Data>
+          <Data name="FileId">
+            <value>1005253644</value>
+          </Data>
+          <Data name="FileSize">
+            <value>5927175</value>
+          </Data>
+          <Data name="FileType">
+            <value>0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark id="realPoint">
+        <name></name>
+        <styleUrl>#MarkerStylePicture</styleUrl>
+        <description>
+          <div>
+            <a href="" target="_blank">
+              <img style="height:360" src="https://down-files.2bulu.com/f/dn1?downParams=%2BY4%2BXtddA6OfbsfouBmBGjCgbziEg3Vl" />
+            </a>
+          </div>
+        </description>
+        <TimeStamp>
+          <when>2022-03-10T06:55:03Z</when>
+        </TimeStamp>
+        <Point>
+          <coordinates>121.50898894722533,31.284157412903667,20.817436</coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="PosType">
+            <value>0</value>
+          </Data>
+          <Data name="Speed">
+            <value>0.9073149</value>
+          </Data>
+          <Data name="Accuracy">
+            <value>4.7</value>
+          </Data>
+          <Data name="Time">
+            <value>1646895303000</value>
+          </Data>
+          <Data name="description">
+            <value></value>
+          </Data>
+          <Data name="FileId">
+            <value>1005253642</value>
+          </Data>
+          <Data name="FileSize">
+            <value>4744334</value>
+          </Data>
+          <Data name="FileType">
+            <value>0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+    </Folder>
+    <Folder id="TbuluTrackFolder">
+      <name>轨迹</name>
+      <Placemark>
+        <name>轨迹片段1</name>
+        <description>
+          <div>通过“两步路”生成，http://www.2bulu.com</div>
+          <div>上传者:种花家的甲壳虫</div>
+          <div>开始时间:2022-03-10 14:48:13</div>
+          <div>结束时间:2022-03-10 14:55:05</div>
+          <div>轨迹点数:35</div>
+          <div>本段里程:414.5120866525983米</div>
+          <div>最高海拔:91.21096634492278米</div>
+          <div>最低海拔:12.280204412255218米</div>
+          <div>累计爬升:0.0米</div>
+          <div>累计下降:75.4489951644747米</div>
+        </description>
+        <gx:Track>
+          <gx:coord>121.50910694509699 31.2836176779093 91.21097</gx:coord>
+          <gx:coord>121.50913005608265 31.283768155753002 57.572193</gx:coord>
+          <gx:coord>121.50904005134723 31.28383323335649 56.90744</gx:coord>
+          <gx:coord>121.50895167808578 31.283792407160902 54.788483</gx:coord>
+          <gx:coord>121.50889708232106 31.283688670103594 49.04706</gx:coord>
+          <gx:coord>121.50886554360407 31.283573320976238 44.0725</gx:coord>
+          <gx:coord>121.5088343753492 31.28347154557505 42.71056</gx:coord>
+          <gx:coord>121.50878963322228 31.283373050635443 36.92711</gx:coord>
+          <gx:coord>121.5086948419419 31.283360366650307 32.738934</gx:coord>
+          <gx:coord>121.50864562874004 31.28344539452901 30.28667</gx:coord>
+          <gx:coord>121.50867852182246 31.283544353141657 27.003263</gx:coord>
+          <gx:coord>121.50867391169041 31.283645233110526 24.452753</gx:coord>
+          <gx:coord>121.50856244903315 31.283721056126044 20.651188</gx:coord>
+          <gx:coord>121.50847683892752 31.283802485652792 22.516237</gx:coord>
+          <gx:coord>121.50836666110847 31.283858529457248 22.768274</gx:coord>
+          <gx:coord>121.50825371563252 31.28390388579109 23.114141</gx:coord>
+          <gx:coord>121.50813384616113 31.283939479374663 23.351397</gx:coord>
+          <gx:coord>121.5080262429127 31.28397276365328 24.282524</gx:coord>
+          <gx:coord>121.50794103697206 31.284030617775915 23.84001</gx:coord>
+          <gx:coord>121.50795795879067 31.284109568672346 23.034588</gx:coord>
+          <gx:coord>121.50807940847267 31.284164003374055 18.593704</gx:coord>
+          <gx:coord>121.50818947588675 31.284231632783136 15.761971</gx:coord>
+          <gx:coord>121.50829837706054 31.284279378312434 13.848537</gx:coord>
+          <gx:coord>121.50840920375981 31.284318997345178 13.589674</gx:coord>
+          <gx:coord>121.5084859633662 31.284387260502992 14.809417</gx:coord>
+          <gx:coord>121.50858150986157 31.284437844860072 12.280205</gx:coord>
+          <gx:coord>121.5086929655111 31.28442500701325 20.325478</gx:coord>
+          <gx:coord>121.50880099491204 31.284389010763196 20.993788</gx:coord>
+          <gx:coord>121.50890539014453 31.284353474553008 20.668406</gx:coord>
+          <gx:coord>121.5090173294912 31.284318386041654 23.398458</gx:coord>
+          <gx:coord>121.50913946077983 31.284282318800738 22.028254</gx:coord>
+          <gx:coord>121.50925258318803 31.28425983949671 21.294378</gx:coord>
+          <gx:coord>121.5091875644414 31.284255393363484 20.06139</gx:coord>
+          <gx:coord>121.50905942690723 31.28422947365752 20.493374</gx:coord>
+          <gx:coord>121.50899800994729 31.28415121147633 20.88236</gx:coord>
+          <when>2022-03-10T06:48:13Z</when>
+          <when>2022-03-10T06:48:39Z</when>
+          <when>2022-03-10T06:48:53Z</when>
+          <when>2022-03-10T06:49:03Z</when>
+          <when>2022-03-10T06:49:15Z</when>
+          <when>2022-03-10T06:49:29Z</when>
+          <when>2022-03-10T06:49:39Z</when>
+          <when>2022-03-10T06:49:49Z</when>
+          <when>2022-03-10T06:50:03Z</when>
+          <when>2022-03-10T06:50:11Z</when>
+          <when>2022-03-10T06:50:23Z</when>
+          <when>2022-03-10T06:50:39Z</when>
+          <when>2022-03-10T06:50:49Z</when>
+          <when>2022-03-10T06:50:53Z</when>
+          <when>2022-03-10T06:51:01Z</when>
+          <when>2022-03-10T06:51:11Z</when>
+          <when>2022-03-10T06:51:21Z</when>
+          <when>2022-03-10T06:51:29Z</when>
+          <when>2022-03-10T06:51:39Z</when>
+          <when>2022-03-10T06:52:11Z</when>
+          <when>2022-03-10T06:52:23Z</when>
+          <when>2022-03-10T06:52:31Z</when>
+          <when>2022-03-10T06:52:43Z</when>
+          <when>2022-03-10T06:52:57Z</when>
+          <when>2022-03-10T06:53:07Z</when>
+          <when>2022-03-10T06:53:23Z</when>
+          <when>2022-03-10T06:53:43Z</when>
+          <when>2022-03-10T06:53:51Z</when>
+          <when>2022-03-10T06:54:03Z</when>
+          <when>2022-03-10T06:54:11Z</when>
+          <when>2022-03-10T06:54:19Z</when>
+          <when>2022-03-10T06:54:35Z</when>
+          <when>2022-03-10T06:54:47Z</when>
+          <when>2022-03-10T06:54:57Z</when>
+          <when>2022-03-10T06:55:05Z</when>
+          <ExtendedData>
+            <Data name="GxTrackExtendedData">
+              <value>0.17781399,4.9;1.0128113,4.7;1.0783391,4.7;0.87642753,4.7;1.0384424,4.7;0.95157343,4.7;0.96383446,4.7;0.7493531,4.7;1.0170126,4.857719;1.0252646,4.7;0.602565,4.294341;1.1614385,4.7;1.3435562,5.227854;1.040559,4.7;0.99981403,4.2032256;1.1188661,4.520591;1.014207,4.233526;1.1334952,3.9035416;0.90105605,4.7;0.8967558,4.7;0.7114841,4.7;1.1244327,4.7;0.9903662,4.7;1.2030606,4.7;0.94459116,4.7;0.75698715,4.7;0.91336316,4.7;0.8198591,4.7;1.0063416,4.9;1.0172086,4.7;1.2325944,4.7;0.9585444,4.206035;0.9956334,4.4191947;0.8681057,4.7;0.9483615,4.7;</value>
+            </Data>
+          </ExtendedData>
+        </gx:Track>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
